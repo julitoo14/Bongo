@@ -1,0 +1,32 @@
+.top{
+    background-color: rgb(236, 39, 39);
+    color: white;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5em;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.description{
+    font-size: 1em;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 768px) {
+    .top{
+        height: 22em;
+    }
+}
