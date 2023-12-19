@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../Header/Header'
 import ItemList from '../ItemList/ItemList';
-function MainView(props) {
+
+
+function ItemListContainer(props) {
 
     return (
         <>
-            <Header />
             <ItemList />
         </>
     );
 }
 
-export default MainView;
+export default ItemListContainer;

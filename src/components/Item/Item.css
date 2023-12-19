@@ -1,7 +1,6 @@
 .itemContainer{
     width: 20em;
     padding: 0.4em;
-    border: 2px solid rgba(0, 0, 0, 0.626);
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -14,6 +13,12 @@
     margin: auto;
     font-size: 1em;
     border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.itemButton a {
+    text-decoration: none;
     color: white;
 }
 
