@@ -1,0 +1,12 @@
+.totalItems{
+    font-size: 1rem;
+    color: #fff;
+    margin: 0.2rem 0.3rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    background-color: #ea5d5d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}

@@ -2,6 +2,8 @@
     width: 20em;
     padding: 0.5em;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .counterContainer{
@@ -34,6 +36,25 @@
     height: 1.5em;
     cursor: pointer;
 }
+
+.addButton{
+    margin: auto;
+    margin-top: 1em;
+    width: 10em;
+    height: 3em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.finishButton{
+    text-decoration: none;
+    color: white;
+}
+
 
 .button:hover{
     background-color: rgba(0, 0, 0, 0.8);

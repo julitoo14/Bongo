@@ -35,19 +35,6 @@
     width: 100%;
 }
 
-.itemDetailButton{
-    margin: auto;
-    margin-top: 1em;
-    width: 10em;
-    height: 3em;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 
 @media (max-width: 768px) {
     .itemDetailContainer {

@@ -13,13 +13,13 @@ function Item(props) {
     }
 
     return (
-        <div className='itemContainer'>
-           <h1 className='name'> {props.item.name} </h1>
-           <img className='image' src={`${props.item.image}`} alt="" />
-           <hr />
-           <p className='stock'>Stock Disponible: {props.item.stock}</p>
-           <button className='itemButton' ><Link to={`/item/${props.item.id}`}>Ver Detalles</Link></button> 
-        </div>
+            <Link className='itemContainer' to={`/item/${props.item.id}`}>
+                <h1 className='name'> {props.item.name} </h1>
+                <img className='image' src={`${props.item.image}`} alt="" />
+                <hr />
+                <p className='stock'>Stock Disponible: {props.item.stock}</p>
+                <button className='itemButton' >Ver Detalles</button> 
+           </Link> 
     );
 }
 

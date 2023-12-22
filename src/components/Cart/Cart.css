@@ -1,0 +1,61 @@
+.button{
+    background-color: tomato;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+.removeButton{
+    background-color: none;
+    height: auto;
+    width: auto;
+    margin: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.removeIcon{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.button .link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+    width: max-content;
+    padding: 2em;
+    height: max-content;
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.cartImage{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3em;
+
+}

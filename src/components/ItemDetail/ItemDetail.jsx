@@ -1,8 +1,19 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import ItemCounter from '../ItemCounter/ItemCounter';
 import './ItemDetail.css';
+import { CartContext } from '../../context/cartContext';
+
 
 function ItemDetail(props) {
+
+    const {addToCart} = useContext(CartContext);
+
+    const onAdd = (quantityToAdd) => {
+        console.log(`Agregando ${quantityToAdd} ${props.item.name} al carrito (ID ${props.item.id})`);
+        addToCart(props.item, quantityToAdd);
+        
+    }
+
     return (
         <div className='itemDetailContainer'>
             <div>
@@ -12,8 +23,7 @@ function ItemDetail(props) {
             <div className='details'>
                 <h2 className='price'>$ {props.item.precio}</h2>
                 <h3 className='description'>{props.item.description}</h3>
-                <ItemCounter stock={props.item.stock} />
-                <button className='itemDetailButton'>Agregar al carrito</button>
+                <ItemCounter onAdd={onAdd} stock={props.item.stock} />
             </div>
 
         </div>

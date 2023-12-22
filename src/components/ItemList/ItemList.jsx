@@ -138,7 +138,7 @@ function ItemList(props) {
     return (
         <div className='itemsContainer'>
             {items.map((item) => {
-                return <Item item={item} />
+                return <Item key={item.id} item={item} />
             })}
         </div>
     );

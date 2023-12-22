@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 
 function Navbar(props) {
     const [showLinks, setShowLinks] = useState(false);
@@ -26,9 +27,8 @@ function Navbar(props) {
                 <button className='navButton'>
                 <img onClick={() => alert('user')} className='user' src='/user.png' alt='user' />
                 </button>
-                <button onClick={() => alert('cart')} className='navButton'>
-                <img className='cart' src='/cart.png' alt='cart' />
-                </button>
+                <CartWidget />
+
             </div>
         </nav>
     );
